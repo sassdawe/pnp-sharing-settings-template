@@ -21,21 +21,22 @@ These are the files in this repository
 
 ## Prerequisites
 
-- One (1) SharePoint Online tenant
-- One Entra ID application registration
-  - for using v3 of the pipeline we need to grant permissions in Entra ID
-  - for using v2 or v1 we need to grant permissions in SharePoint Online for ACS authentication
-- Certificate public key uploaded into Entra ID or Client Secret generated for the application
-- Certificate private key uploaded into GitHub as a secret 
+- One (1) SharePoint Online tenant (Multiple tenants are supported, see the end of this page)
+- One Entra ID application registration (Or multiple when multiple tenants are targeted)
+  - for using version-3 of the pipeline we only need to grant permissions in Entra ID
+  - for using version-2 or version-1 we need to grant permissions in SharePoint Online for ACS authentication
+- Certificate public key uploaded into Entra ID (for V3) or Client Secret generated for the application (for V1 & V2)
+- Certificate private key or client secret uploaded into GitHub as a secret 
 
 ## Importing this repository
 
 1. Navigate to [github.com/new/import](https://github.com/new/import) to create a new repository by importing this one
 2. For **the URL for your source repository** past the git url of this one, which is: `https://github.com/sassdawe/pnp-sharing-settings-template.git`
-3. Set the **Owner** make sure the right GitHub organization is selected
-4. Give a **name** for your new repository, maybe `SharePointOnlineSharingSettingsAsCode`
-5. Set the visibility to **private**
-6. Click on **Begin import**
+3. No credentials needed
+4. Set the **Owner** make sure the right GitHub organization is selected
+5. Give a **name** for your new repository, maybe `SharePointOnlineSharingSettingsAsCode`
+6. Set the visibility to **private**
+7. Click on **Begin import**
 
 ![image](https://github.com/sassdawe/pnp-sharing-settings-template/assets/10754765/1107b1a1-bfba-4b0a-aa3b-aecd379f2e3a)
 
